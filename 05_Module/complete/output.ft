@@ -1,0 +1,24 @@
+output "instance_private_ip_a" {
+  description = "Private IP of Instance"
+  value       = aws_instance.instance_a.private_ip
+}
+
+output "instance_private_ip_b" {
+  description = "Private IP of Instance"
+  value       = aws_instance.instance_b.private_ip
+}
+
+output "instance_id_a" {
+  description = "ID of Instance a"
+  value       = aws_instance.instance_a.id
+}
+
+output "instance_id_b" {
+  description = "ID of Instance b"
+  value       = aws_instance.instance_b.id
+}
+
+output "loadbalancer_dns_name" {
+  description = "URL of LoadBalancer"
+  value       = module.elb.elb_dns_name
+}
